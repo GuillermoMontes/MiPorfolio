@@ -5,7 +5,6 @@ import {
 	FaHtml5,
 	FaReact,
 	FaBootstrap,
-	FaPython,
 } from "react-icons/fa";
 
 import {
@@ -36,10 +35,7 @@ export const SkillsData = [
 		name: "React Js",
 		icon: <FaReact />,
 	},
-	{
-		name: "Python",
-		icon: <FaPython />,
-	},
+
 	{
 		name: "Visual Studio Code",
 		icon: <SiVisualstudiocode />,

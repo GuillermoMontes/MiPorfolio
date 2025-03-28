@@ -10,10 +10,10 @@ const Main = ({nav, handleNav, closeNav}) => {
   return(
     <div onClick={closeNav } className='main'>
         <HeroSection nav={nav} handleNav={handleNav} />
+        <Works />
         <About />
         <Skills />
         <Services />
-        <Works />
         <Contact />
     </div>
   )

@@ -80,6 +80,19 @@ const Navbar = ({ nav, handleNav }) => {
 							smooth={true}
 							offset={0}
 							duration={500}
+							to='works'
+							className='mid-links'>
+							<BiBookContent className='mid-icon' />
+							<li className='mid-link' onClick={handleNav}>
+								Proyectos
+							</li>
+						</Link>
+						<Link
+							activeClass='active'
+							spy={true}
+							smooth={true}
+							offset={0}
+							duration={500}
 							to='about'
 							className='mid-links'>
 							<FiUser className='mid-icon' />
@@ -119,19 +132,6 @@ const Navbar = ({ nav, handleNav }) => {
 							smooth={true}
 							offset={0}
 							duration={500}
-							to='works'
-							className='mid-links'>
-							<BiBookContent className='mid-icon' />
-							<li className='mid-link' onClick={handleNav}>
-								Proyectos
-							</li>
-						</Link>
-						<Link
-							activeClass='active'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={500}
 							to='contact'
 							className='mid-links'>
 							<BiEnvelope className='mid-icon' />
@@ -140,11 +140,7 @@ const Navbar = ({ nav, handleNav }) => {
 							</li>
 						</Link>
 					</ul>
-					<div className='copy'>
-						<small className='copyright'>
-							© Copyright ©2024 <br /> Todos los derechos reservados |
-						</small>
-					</div>
+
 				</motion.div>
 			</motion.nav>
 		</AnimatePresence>
